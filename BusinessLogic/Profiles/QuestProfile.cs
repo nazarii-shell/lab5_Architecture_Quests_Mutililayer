@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessLogic.Models;
 using DataAccess.Models;
+using DTOS;
 
 namespace BusinessLogic.Profiles
 {
@@ -9,6 +10,9 @@ namespace BusinessLogic.Profiles
         public QuestProfile()
         {
             CreateMap<Quest, QuestBussinessModel>();
+            CreateMap<QuestDto, QuestBussinessModel>();
+            CreateMap<QuestDto, Quest>();
+            CreateMap<QuestBussinessModel, Quest>();
         }
     }
 }

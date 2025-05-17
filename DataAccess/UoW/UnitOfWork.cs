@@ -13,7 +13,7 @@ namespace DataAccess.UoW
         private QuestRepository _questRepo;
         // private GenericRepository<Availability> _availabilityRepo;
 
-        public QuestRepository QuestRepo => _questRepo ??= new QuestRepository(questContext);
+        public IQuestRepository QuestRepo => _questRepo ??= new QuestRepository(questContext);
 
         // public GenericRepository<Availability> AvailabilityRepo => _availabilityRepo ??= new GenericRepository<Availability>(questContext);
 

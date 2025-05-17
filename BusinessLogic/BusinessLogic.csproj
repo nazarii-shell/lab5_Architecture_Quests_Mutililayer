@@ -13,6 +13,11 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+      <ProjectReference Include="..\DTOS\DTOS.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="__tests__\" />
     </ItemGroup>
 
 </Project>

@@ -14,8 +14,10 @@ public class QuestsContext : DbContext
 
     public QuestsContext()
     {
-        DbPath = "./blogging.db";
+        DbPath = "/Users/nazariypoptsov/Documents/NAU/2_course/2_semester/Архітектура/5/lab5/DataAccess/blogging.db";
     }
+    
+    
 
     // The following configures EF to create a Sqlite database file in the
     // special "local" folder for your platform.

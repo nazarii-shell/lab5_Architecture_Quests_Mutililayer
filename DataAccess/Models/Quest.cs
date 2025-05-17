@@ -12,5 +12,5 @@ public class Quest
     public int ParticipantsLimit { get; set; }
 
     // Navigation Property
-    public ICollection<Availability> Availabilities { get; set; } = new List<Availability>();
+    public List<Availability> Availabilities { get; set; } = new ();
 }

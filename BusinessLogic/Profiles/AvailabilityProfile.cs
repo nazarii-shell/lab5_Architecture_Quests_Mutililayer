@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BusinessLogic.Models;
 using DataAccess.Models;
+using DTOS;
 
 namespace BusinessLogic.Profiles
 {
@@ -10,6 +11,7 @@ namespace BusinessLogic.Profiles
         {
             CreateMap<AvailabilityBussinessModel, Availability>()
                 .ForMember(dest => dest.Quest, opt => opt.MapFrom(src => src.Quest));
+            CreateMap<AvailabilityDto, Availability>();
         }
     }
 }

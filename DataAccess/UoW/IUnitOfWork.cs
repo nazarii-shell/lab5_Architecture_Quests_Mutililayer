@@ -6,7 +6,7 @@ namespace DataAccess.UoW
 {
     public interface IUnitOfWork : IDisposable
     {
-        public QuestRepository QuestRepo { get; }
+        public IQuestRepository QuestRepo { get; }
 
         // public GenericRepository<Availability> AvailabilityRepo { get; }
         public void Save();
